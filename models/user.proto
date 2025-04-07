@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package user;
+
+message User {
+  string name = 1;
+  string email = 2;
+}
+
+message CreateRequest {
+  User user = 1;
+}
+
+message CreateUserResponse {
+  int64 id = 1;
+}
+
+message GetUserResponse {
+  User user = 1;
+}
